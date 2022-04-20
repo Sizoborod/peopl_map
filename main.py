@@ -12,14 +12,14 @@ api = Api(app)
 
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
-login_manager = LoginManager()
-login_manager.init_app(app)
+'''login_manager = LoginManager()
+login_manager.init_app(app)'''
 
 
 
 @app.route('/')
 def main_window():
-    return render_template('index.html')
+    return render_template('object_manager.html')
 
 @app.route("/map")
 def map():
