@@ -15,7 +15,7 @@ def up():
             print(coord)
 
             ff = '<table  style="border-collapse: collapse; width: 100%;"><tbody><tr><td style="width: 20%;">'
-            ff += f'<img class="imageLeft" src="static/img/{i[4]}" width="85" height="85" alt="Ed" /></td><td style="width: 80%;">'
+            ff += f'<img class="imageLeft" src="static/img/{i[4]}" width="85" alt="Ed" /></td><td style="width: 80%;">'
             ff += f'<p>{i[2]}</p></td></tr></tbody></table><p>{i[3]}</p>'
             link = f"<a  href=\"{i[6]}\">Ссылка</a>" if i[6] else ''
 
