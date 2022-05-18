@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+import flask_restful
+
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from waitress import serve
 from werkzeug.utils import redirect
@@ -9,7 +11,7 @@ from translation import up
 
 up()
 app = Flask(__name__)
-api = Api(app)
+api = flask_restful.Api(app)
 
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
