@@ -7,6 +7,7 @@ from flask_restful import reqparse, abort, Api, Resource
 from translation import up
 
 
+up()
 app = Flask(__name__)
 api = Api(app)
 
